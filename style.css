@@ -1,0 +1,121 @@
+/* *{
+    margin: 0;
+    padding:0;
+} */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: 170px;
+    grid-gap: 1em;
+}
+.nested >div{
+    /* margin: 0;
+    padding:0; */
+    border:1px solid#333;
+}
+
+.wrapper > div{
+    background: cadetblue;
+    text-align: center;
+
+}
+
+.box{
+    padding: 3.5em;
+}
+
+.nested{
+    display: grid; 
+    grid-auto-rows: auto;
+}
+
+.nested > div:nth-child(odd){
+    background: #ddd;
+}
+
+.wrapper > .box1:hover{
+    /* background: lightskyblue;
+    color: white; */
+    border-image-repeat: inherit;
+    background-image: url('blue.jpg');
+}
+
+.wrapper > .box8:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.wrapper > .box9:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.wrapper > .box2:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.wrapper > .box10:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.wrapper > .box5:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.wrapper > .box1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: lightcoral ;
+}
+
+.wrapper > .box3{
+    grid-column: 3/3;
+    grid-row: 1/3;
+    border:3px solid#333;
+}
+
+.wrapper > .box4{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background: lightgreen;
+}
+
+.wrapper > .box5{
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+
+
+.wrapper > .box6{
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background: lightgreen;
+}
+
+.wrapper > .box7{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background: lightgreen;
+}
+
+.wrapper > .box8{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.wrapper > .box9{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
