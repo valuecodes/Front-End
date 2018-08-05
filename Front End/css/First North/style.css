@@ -1,0 +1,140 @@
+
+body{
+    background-color: #f4f4f4;
+    color:lightslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.main-header a{
+    text-decoration: none;
+}
+
+.main-header a:active{
+    color:black;
+}
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-header{
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(149, 211, 247);
+}
+
+#navbar{
+    background-color:#333;
+    color: #fff;
+    padding: 15px;
+}
+
+#navbar ul{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+#navbar a:hover{
+    color: rgb(183, 205, 252);
+}
+
+.showcase{
+    background-image: url('pictures/showcase.jpeg');
+    height: 300px;
+    background-position: center;
+}
+
+.sectors{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.box{
+    border: 2px solid;
+    height: 175px;
+    text-align: center;
+    border-radius: 25px;
+    padding-top: 65px;
+}
+
+.box:hover{
+    background: rgb(149, 211, 247);
+}
+
+.showcase h1{
+    margin: 0;
+    text-align: center;
+    padding-top: 120px;
+    color: #f4f4f4;
+    font-size: 50px;
+}
+
+.wrapper1{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-right: 30px;
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+.info{
+    align-content:right;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+}
+
+.box1 h1{
+    padding-left: 13px;
+    margin-top: 15px;
+}
+
+.lists{
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.list{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    
+}
+
+.list ul{
+    margin: 0;
+}
+
+.list li{
+    font-size: 15px
+}
+
+.footer{
+    background-color: #333;
+    color: #f4f4f4;
+    height: 60px;
+    margin-top: 48px;
+    text-align: center;
+    padding-top: 2px;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+
