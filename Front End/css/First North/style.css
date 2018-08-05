@@ -7,7 +7,9 @@ body{
     line-height: 1.6em;
     margin: 0;
 }
-
+.btn{
+    text-decoration: none;
+}
 .main-header a{
     text-decoration: none;
 }
@@ -130,7 +132,7 @@ body{
     background-color: #333;
     color: #f4f4f4;
     height: 60px;
-    margin-top: 48px;
+    margin-top: 60px;
     text-align: center;
     padding-top: 2px;
     margin-bottom: 0;
