@@ -1,0 +1,38 @@
+body{
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.title{
+    margin-bottom: 1em;
+}
+
+.list-group-item{
+    
+    border: solid 1px ;
+    border-radius: 25px;
+}
+
+.list-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#items a{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+.list-group-header{
+    grid-gap: 20px;
+    width: 100%;
+}
