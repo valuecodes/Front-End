@@ -1,6 +1,7 @@
 body{
     background-color: lightskyblue;
     font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 .container{
@@ -12,19 +13,28 @@ body{
     margin-bottom: 1em;
 }
 
-.list-group-item{
-    
-    border: solid 1px ;
-    border-radius: 25px;
-}
-
-.list-group{
+.companiesList{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.list-group-item{
+    border: solid 1px ;
+    border-radius: 25px;
+   
+}
+
+.list-group-header{
+    display: grid;
+    grid-template-columns: 1fr ;
     grid-gap: 20px;
 }
 
-#items a{
+
+#items li{
+    text-decoration: none;
     font-size: 20px;
     text-align: center;
     padding: 30px 0px;
@@ -35,4 +45,8 @@ body{
 .list-group-header{
     grid-gap: 20px;
     width: 100%;
+}
+
+.companiesList ul{
+    text-decoration: none;
 }
