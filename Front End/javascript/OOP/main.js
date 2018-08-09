@@ -46,11 +46,13 @@ sectors[3]=new Sectors('Biotech',2);
 sectors[4]=new Sectors('Finance',1);
 sectors[5]=new Sectors('Law',1);
 
-for(i=0;i<sectors.length;i++)
-{
-    console.log(sectors[i].total);
+
+
+// for(i=0;i<sectors.length;i++)
+// {
+//     console.log(sectors[i].total);
     
-}
+// }
 
 // ------------------------------------
 // let sectorp = document.getElementById('items');
@@ -61,7 +63,7 @@ for(i=0;i<sectors.length;i++)
 for(i=1;i<6;i++)
 {       
         // Display sector name
-        var h = document.createElement("h1");        
+        var h = document.createElement("li");        
         var th = document.createTextNode(sectors[i].sectors);
         h.className='list-group-header';               
         h.appendChild(th);
@@ -101,11 +103,16 @@ function filterNames(){
     //Get all company names
     let items = document.getElementById('items');
     let li = items.querySelectorAll('li.list-group-item');
-
-
+    
     // Get all sectors
-    let sector = ul.querySelectorAll('ul.items');
-    let sectors = items.querySelectorAll('h1.list-group-header');
+    let sector = ul.querySelectorAll('items');
+    let sectorhead = items.querySelectorAll('li.list-group-header');
+
+    let sectorheader = items.getElementsByClassName('list-group-header')[1];
+    console.log(sectorheader);
+    sectorheader.style.display = 'none';
+    sectors[1].total--;
+    console.log(sectors[1].total);
 
     // Testing
     // let a = items.getElementsByTagName('li')[2];
@@ -127,24 +134,31 @@ function filterNames(){
         }
     }
     
-    // Display Sectors----------------------------------
-    // for(let i=0;i<sector.length;i++){
-    //     let cnt=0;
-    //     for(let y=0;y<company.length;y++)
-    //     {
-    //         if(sector[i].style.display == 'none')
-    //         {
-    //             sector.total--;
-    //         }
-    //     }
-    //     if(sector.total==0){
-    //         sectors[i].style.display = 'none';
-    //     }
-    //     for(i=0;i<sectors.length;i++)
-    //     {
-    //         console.log(sectors[i].total);
-    //     }
-    // }
+    // Display Sectors
+
+    for(let i=0;i<sector.length;i++){
+
+        let sectorheader = items.getElementsByClassName('list-group-header')[i];
+        let cnt=0;
+        for(let y=0;y<company.length;y++)
+        {
+            if(company[i].style.display == 'none')
+            {
+                sectors[i].total--;
+            }
+            if(company[i].style.display == '')
+            {
+                sectors[i].total++;
+            }
+        }
+        if(sectors[i].total==0){
+            sectorheader.style.display = 'none';
+        }
+        for(i=0;i<sectors.length;i++)
+        {
+            console.log(sectors[i].total);
+        }
+    }
 }
 
 
