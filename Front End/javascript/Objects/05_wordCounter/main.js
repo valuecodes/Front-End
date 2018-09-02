@@ -66,3 +66,5 @@ var mostUsedWords=(array,cnt)=>{
 }
 
 mostUsedWords(words,10);
+
+console.log(words);
