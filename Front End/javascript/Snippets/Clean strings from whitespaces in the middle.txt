@@ -1,0 +1,7 @@
+var globalTitle = " Winter Is  Coming";
+
+let urlSlug=(title)=> title.toLowerCase().split(" ").filter(val=>!!val).join(" ");
+
+var winterComing = urlSlug(globalTitle); 
+
+console.log(winterComing);
